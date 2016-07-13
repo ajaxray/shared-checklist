@@ -49,12 +49,12 @@ function watch(listReference)
     });
 
     activeList.child('items').on('child_added', function(data) {
-        $('#list-items').append('<li id="'+ data.key +'"><input type="checkbox"> '+ data.val() +'</li>')
+        $('#list-items').append('<li id="'+ data.key +'"><input type="checkbox"> '+ data.val() +'</li>');
     });
 
     activeList.child('items').on('child_removed', function(data) {
         $('#' + data.key +' input').prop('checked', true);
-        $('#' + data.key).addClass('deleted').fadeOut(5000, function() {
+        $('#' + data.key).fadeOut(5000, function() {
             $('#' + data.key).remove();
         });
     });
