@@ -64,7 +64,7 @@ body {
     padding: 5px 10px 10px;
     border: 1px solid #666;
     box-shadow: 0 0 5px #333;
-    background-color: #fafafa;
+    background-color: cornsilk;
     margin: 20px auto;
 }
 #list-items {
@@ -75,16 +75,20 @@ body {
     font-size: 16px;
     padding: 5px 0;
     color: darkolivegreen;
-    border-bottom: 1px dotted lightgray;
+    border-bottom: 1px dashed lightblue;
 }
 .meta {
     font-size: 85%;
     color: #999;
 }
+.deleted {
+    color: crimson;
+}
 .notice {
     font-size: 70%;
     color: lightcoral;
 }
+
 
 
 /* ==========================================================================

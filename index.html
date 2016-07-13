@@ -76,8 +76,7 @@
                 });
 
                 $('#list-items').on('click', 'input[type=checkbox]', function(e) {
-                    activeList.child('items/'+ $(this).parent().data('key')).remove();
-                    $(this).parent().remove();
+                    activeList.child('items/'+ $(this).parent().prop('id')).remove();
                 });
 
                 $('#share').click(function() {

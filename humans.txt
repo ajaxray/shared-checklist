@@ -1,16 +1,19 @@
 /* TEAM */
-	Chef: Anis 
+
+	OneManArmy: Anis Uddin Ahmad
 	Contact: anis.programmer@gmail.com
 	Twitter: @ajaxray
 	From: Dhaka, Bangladesh
 
 /* THANKS */
 
-    Firebase
-    jQuery
+    Firebase - https://firebase.google.com
+    jQuery - https://jquery.com/
+    Initializr - http://www.initializr.com/
     Gathering.js - https://gist.github.com/ajaxray/17d6ec5107d2f816cc8a284ce4d7242e
 
 /* SITE */
+
 	Last update: 2016/07/13
 	Language: English
 	Doctype:HTML5
