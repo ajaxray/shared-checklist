@@ -14,14 +14,6 @@ var Gathering = (function() {
         return Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5);
     };
 
-    var getValues = function(object) {
-        var values = [];
-        for(var i in object) {
-            values.push(object[i]);
-        }
-        return values;
-    };
-
     function Gathering(databaseReference, roomName) {
 
         this.db = databaseReference;
@@ -58,7 +50,7 @@ var Gathering = (function() {
             this.myName = '';
         };
 
-        this.end = function () {
+        this.over = function () {
             this.room.remove();
         };
 
