@@ -56,10 +56,11 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
         <script src="js/vendor/gathering.js"></script>
+        <script src="js/config.js"></script>
         <script src="js/main.js"></script>
         <script>
             $(document).ready(function() {
-                firebase.initializeApp(config);
+                firebase.initializeApp(config.firebase);
 
                 if(listKey = getQueryParam('list')) {
                     watch(firebase.database().ref('lists/' + listKey));

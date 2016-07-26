@@ -1,0 +1,8 @@
+// Firebase Config
+var config = {
+    firebase: {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: ""
+    }
+};

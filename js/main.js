@@ -1,10 +1,3 @@
-// Firebase Config
-var config = {
-    apiKey: "AIzaSyA45lx4yYAW1GEUQDYNehB_0NejTsXEGJs",
-    authDomain: "fir-app-4125e.firebaseapp.com",
-    databaseURL: "https://fir-app-4125e.firebaseio.com"
-};
-
 var activeList, listViewers;
 
 /**
@@ -12,7 +5,7 @@ var activeList, listViewers;
  * @param key
  */
 function getQueryParam(key) {
-    return unescape(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + escape(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
 }
 
 function createList(db, name) {
